@@ -17,7 +17,7 @@ getStartedBtn.addEventListener('click', () => {
         nameInputModal.style.display = 'block';
     } else {
         // If the user has already entered their name, open the assistant page
-        window.open('index.html', '_blank'); 
+        window.open('assistant.html', '_blank'); 
     }
 });
 
