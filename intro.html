@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z E N I X - AI Virtual Assistant</title>
+    <link rel="stylesheet" href="intro.css">
+    <link rel="icon" type="image/png" href="title logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+           <a href="intro.html"><img src="logo.png" alt="ZENIX LOGO"></a> 
+            <h1>Z E N I X</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#google-features">Google Features</a></li>
+            <li><a href="#about">About</a></li>
+
+        </ul>
+        <div class="auth-buttons">
+            <button id="logoutBtn" style="display: none;">Reset</button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="welcomeMessage">Welcome to Z E N I X</h1>
+            <p><i>Your Personal futuristic AI Virtual Assistant.</i></p>
+            <p>Designed to make your life <strong>easier, faster, and smarter.</strong></p>
+            <button id="tryItBtn">Try It Now</button>
+            <button id="getStartedBtn" style="display: none;">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="hero img.png" alt="AI Assistant">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <i class="fas fa-microphone"></i>
+                <h3>Voice Commands</h3>
+                <p>Control Z E N I X with simple voice commands.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-search"></i>
+                <h3>Smart Search</h3>
+                <p>Get instant answers and information from the web.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-music"></i>
+                <h3>Entertainment</h3>
+                <p>Enjoy music, jokes, and trending news.</p>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Google Features Section -->
+    <section id="google-features" class="google-features">
+        <h2>Google Features</h2>
+        <div class="google-feature-cards">
+            <div class="card">
+                <i class="fas fa-images"></i>
+                <h3>Google Images</h3>
+                <p>Search and view high-quality images directly from Google.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Google Maps</h3>
+                <p>Get real-time navigation and location-based services.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Google News</h3>
+                <p>Stay updated with the latest news from around the world.</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section -->
+     <section id="about" class="about">
+        <h2>About Zenix</h2>
+        <p>Zenix is an AI-powered virtual assistant developed by <i><b>Aashiv and Tushar</i></b>. It is designed to help you with providing information, and entertain you with jokes, music, and trending news.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Z E N I X. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Name Input Modal -->
+    <div id="nameInputModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>What's your good name?</h2>
+            <form id="nameInputForm">
+                <input type="text" id="userNameInput" placeholder="Enter your name" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="intro.js"></script>
+</body>
+</html>
