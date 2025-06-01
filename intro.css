@@ -443,3 +443,42 @@ footer {
         width: 80%;
     }
 }
+
+/* intro.css */
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg: #f0f0f0;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --nav-bg: #1e1e1e;
+  --card-bg: #1f1f1f;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav {
+  background-color: var(--nav-bg);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
