@@ -81,6 +81,39 @@ function updateUI() {
         logoutBtn.style.display = 'none';
     }
 }
+const themeToggleBtn = document.getElementById("themeToggleBtn");
+const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Set theme based on system preference or saved choice
+function setInitialTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    const theme = savedTheme || (userPrefersDark ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+    updateThemeIcon(theme);
+}
+
+// Toggle between light and dark
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    updateThemeIcon(newTheme);
+}
+
+// Change icon based on theme
+function updateThemeIcon(theme) {
+    themeToggleBtn.innerHTML = theme === "dark"
+        ? '<i class="fas fa-sun"></i>'
+        : '<i class="fas fa-moon"></i>';
+}
+
+// Event listener
+themeToggleBtn.addEventListener("click", toggleTheme);
+
+// On load
+setInitialTheme();
+
 
 // Initialize UI
 updateUI();
